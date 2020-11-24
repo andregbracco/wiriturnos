@@ -1,0 +1,17 @@
+
+
+<table>
+
+  {% for i in resultado %}
+
+  <tr>
+
+    <td>{{ i }}</td>
+    <td>{{ resultado[i] | length }}</td>
+    <td><a href="/detalle/{{ i }}">Ver detalle</a></td>
+
+  </tr>
+
+  {% endfor %}
+
+</table>
